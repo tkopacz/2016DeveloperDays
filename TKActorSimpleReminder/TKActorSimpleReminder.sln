@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "TKActorSimpleReminder", "TKActorSimpleReminder\TKActorSimpleReminder.sfproj", "{01D7200B-3031-47B9-BA11-CF1D5C0F5943}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReminderService", "ReminderService\ReminderService.csproj", "{EEAB8C51-985A-4918-998F-8C9B934BDE6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminder1", "Reminder1\Reminder1.csproj", "{905B7DE3-9CAC-49A3-BF1E-745794116FDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reminder1.Interfaces", "Reminder1.Interfaces\Reminder1.Interfaces.csproj", "{E58A5A4B-0FA7-4E83-841D-41E72B58212E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01D7200B-3031-47B9-BA11-CF1D5C0F5943}.Debug|x64.ActiveCfg = Debug|x64
+		{01D7200B-3031-47B9-BA11-CF1D5C0F5943}.Debug|x64.Build.0 = Debug|x64
+		{01D7200B-3031-47B9-BA11-CF1D5C0F5943}.Debug|x64.Deploy.0 = Debug|x64
+		{01D7200B-3031-47B9-BA11-CF1D5C0F5943}.Release|x64.ActiveCfg = Release|x64
+		{01D7200B-3031-47B9-BA11-CF1D5C0F5943}.Release|x64.Build.0 = Release|x64
+		{01D7200B-3031-47B9-BA11-CF1D5C0F5943}.Release|x64.Deploy.0 = Release|x64
+		{EEAB8C51-985A-4918-998F-8C9B934BDE6B}.Debug|x64.ActiveCfg = Debug|x64
+		{EEAB8C51-985A-4918-998F-8C9B934BDE6B}.Debug|x64.Build.0 = Debug|x64
+		{EEAB8C51-985A-4918-998F-8C9B934BDE6B}.Release|x64.ActiveCfg = Release|x64
+		{EEAB8C51-985A-4918-998F-8C9B934BDE6B}.Release|x64.Build.0 = Release|x64
+		{905B7DE3-9CAC-49A3-BF1E-745794116FDF}.Debug|x64.ActiveCfg = Debug|x64
+		{905B7DE3-9CAC-49A3-BF1E-745794116FDF}.Debug|x64.Build.0 = Debug|x64
+		{905B7DE3-9CAC-49A3-BF1E-745794116FDF}.Release|x64.ActiveCfg = Release|x64
+		{905B7DE3-9CAC-49A3-BF1E-745794116FDF}.Release|x64.Build.0 = Release|x64
+		{E58A5A4B-0FA7-4E83-841D-41E72B58212E}.Debug|x64.ActiveCfg = Debug|x64
+		{E58A5A4B-0FA7-4E83-841D-41E72B58212E}.Debug|x64.Build.0 = Debug|x64
+		{E58A5A4B-0FA7-4E83-841D-41E72B58212E}.Release|x64.ActiveCfg = Release|x64
+		{E58A5A4B-0FA7-4E83-841D-41E72B58212E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

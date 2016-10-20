@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <!-- This is used by the StateManager's replicator. -->
+  <Section Name="ReplicatorConfig">
+    <Parameter Name="ReplicatorEndpoint" Value="ReplicatorEndpoint" />
+  </Section>
+  <!-- This is used for securing StateManager's replication traffic. -->
+  <Section Name="ReplicatorSecurityConfig" />
+
+  <!-- Add your custom configuration sections and parameters here. -->
+  <!--
+  <Section Name="MyConfigSection">
+    <Parameter Name="MyParameter" Value="Value1" />
+  </Section>
+  -->
+  <Section Name="Settings">
+    <Parameter Name="BackupMode" Value="Local" />
+  </Section>
+  <Section Name="Azure">
+    <Parameter Name="BackupAccountName" Value="pltkw3coldstorage" />
+    <Parameter Name="PrimaryKeyForBackupTestAccount" Value="pltkw3coldstorage" />
+    <Parameter Name="BlobServiceEndpointAddress" Value="https://pltkw3coldstorage.blob.core.windows.net/" />
+    <Parameter Name="BackupFrequencyInSeconds" Value="30" />
+    <Parameter Name="MaxBackupsToKeep" Value="5" />
+  </Section>
+  <Section Name="Local">
+    <Parameter Name="BackupArchivalPath" Value="C:\temp" />
+    <Parameter Name="BackupFrequencyInSeconds" Value="10" />
+    <Parameter Name="MaxBackupsToKeep" Value="5" />
+  </Section>
+</Settings>

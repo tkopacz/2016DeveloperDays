@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.ServiceFabric.Actors.Client;
+using TKInterfaces;
+using Microsoft.ServiceFabric.Actors;
+
+// For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+
+namespace TKWeb.Controllers
+{
+    [Route("api/[controller]")]
+    public class SFController : Controller
+    {
+        [HttpGet]
+        public IActionResult Index() {
+            return View();
+        }
+        //http://localhost:8459/SF/ActorSet?actorId=1&value=12
+
+        // GET: /<controller>/
+        [HttpGet("ActorSet")]
+        public async Task<string> ActorSet(long actorId, int value) {
+            var start = DateTime.Now;
+            var actor = ActorProxy.Create<ITKActor>(new ActorId(actorId), new Uri("fabric:/TK_2016MainSFFunctionsType/TKActor"));
+            await actor.SetCountAsync(value);
+            var stop = DateTime.Now;
+            return $"{start.Ticks}, {DateTime.Now.Ticks - start.Ticks}, {actorId}, {value}";
+        }
+
+        [HttpGet("ActorGet")]
+        public async Task<string> ActorGet(long actorId) {
+            var start = DateTime.Now;
+            var actor = ActorProxy.Create<ITKActor>(new ActorId(actorId), new Uri("fabric:/TK_2016MainSFFunctionsType/TKActor"));
+            var value = await actor.GetCountAsync();
+            var stop = DateTime.Now;
+            return $"{start.Ticks}, {DateTime.Now.Ticks - start.Ticks}, {actorId}, {value}";
+        }
+
+        [HttpGet]
+        public async Task<string> StatefulGet(long partitionId) {
+            //TODO:::
+            var start = DateTime.Now;
+            var actor = ActorProxy.Create<ITKActor>(new ActorId(partitionId), new Uri("fabric:/TK_2016MainSFFunctionsType/TKActor"));
+            var value = await actor.GetCountAsync();
+            var stop = DateTime.Now;
+            return $"{start.Ticks}, {DateTime.Now.Ticks - start.Ticks}, {partitionId}, {value}";
+        }
+    }
+}

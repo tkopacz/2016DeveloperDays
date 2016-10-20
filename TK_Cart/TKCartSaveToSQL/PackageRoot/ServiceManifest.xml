@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="TKCartSaveToSQLPkg" Version="1.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <ServiceTypes>
+    <StatefulServiceType ServiceTypeName="TKCartSaveToSQLActorServiceType" HasPersistedState="true">
+      <Extensions>
+        <Extension Name="__GeneratedServiceType__" GeneratedId="68e5642a-f5f3-4978-950a-cec71220dbff|Persisted">
+          <GeneratedNames xmlns="http://schemas.microsoft.com/2015/03/fabact-no-schema">
+            <DefaultService Name="TKCartSaveToSQLActorService" />
+            <ServiceEndpoint Name="TKCartSaveToSQLActorServiceEndpoint" />
+            <ReplicatorEndpoint Name="TKCartSaveToSQLActorServiceReplicatorEndpoint" />
+            <ReplicatorConfigSection Name="TKCartSaveToSQLActorServiceReplicatorConfig" />
+            <ReplicatorSecurityConfigSection Name="TKCartSaveToSQLActorServiceReplicatorSecurityConfig" />
+            <StoreConfigSection Name="TKCartSaveToSQLActorServiceLocalStoreConfig" />
+          </GeneratedNames>
+        </Extension>
+      </Extensions>
+    </StatefulServiceType>
+  </ServiceTypes>
+  <CodePackage Name="Code" Version="1.0.0">
+    <EntryPoint>
+      <ExeHost>
+        <Program>TKCartSaveToSQL.exe</Program>
+      </ExeHost>
+    </EntryPoint>
+  </CodePackage>
+  <ConfigPackage Name="Config" Version="1.0.0" />
+  <Resources>
+    <Endpoints>
+      <Endpoint Name="TKCartSaveToSQLActorServiceEndpoint" />
+      <Endpoint Name="TKCartSaveToSQLActorServiceReplicatorEndpoint" />
+    </Endpoints>
+  </Resources>
+  <!-- The content will be generated during build -->
+</ServiceManifest>

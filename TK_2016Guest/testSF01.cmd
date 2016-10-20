@@ -1,0 +1,1 @@
+curl -v http://sf01.dom2.local:8088/aa

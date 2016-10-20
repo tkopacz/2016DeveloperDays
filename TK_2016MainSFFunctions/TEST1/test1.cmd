@@ -1,0 +1,1 @@
+curl "http://pltkw3sfcluster.westeurope.cloudapp.azure.com:8080/api/sf/ActorSet?actorId=2&value=2"

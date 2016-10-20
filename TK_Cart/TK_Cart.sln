@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "TK_Cart", "TK_Cart\TK_Cart.sfproj", "{E1B27E85-6B22-4E4F-9B71-6902D70BAC09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKCart", "TKCart\TKCart.csproj", "{DDCB8DDC-9030-4614-B8E3-88711CC5D287}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKCart.Interfaces", "TKCart.Interfaces\TKCart.Interfaces.csproj", "{D0BCEC89-9415-44E8-91D9-6981419B8DD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKCartWebApi", "TKCartWebApi\TKCartWebApi.csproj", "{5C68E93A-81B4-4434-8122-691417B3B9F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueProcessingService", "QueueProcessingService\QueueProcessingService.csproj", "{A0D0864C-5EE9-4BF3-962A-C93213A8C462}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKCartSaveToSQL", "TKCartSaveToSQL\TKCartSaveToSQL.csproj", "{91D1A5AA-3DF6-4EB1-823C-42A705AE387E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TKCartSaveToSQL.Interfaces", "TKCartSaveToSQL.Interfaces\TKCartSaveToSQL.Interfaces.csproj", "{FFCC55BF-C584-43A0-B17E-29A476A68452}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1B27E85-6B22-4E4F-9B71-6902D70BAC09}.Debug|x64.ActiveCfg = Debug|x64
+		{E1B27E85-6B22-4E4F-9B71-6902D70BAC09}.Debug|x64.Build.0 = Debug|x64
+		{E1B27E85-6B22-4E4F-9B71-6902D70BAC09}.Debug|x64.Deploy.0 = Debug|x64
+		{E1B27E85-6B22-4E4F-9B71-6902D70BAC09}.Release|x64.ActiveCfg = Release|x64
+		{E1B27E85-6B22-4E4F-9B71-6902D70BAC09}.Release|x64.Build.0 = Release|x64
+		{E1B27E85-6B22-4E4F-9B71-6902D70BAC09}.Release|x64.Deploy.0 = Release|x64
+		{DDCB8DDC-9030-4614-B8E3-88711CC5D287}.Debug|x64.ActiveCfg = Debug|x64
+		{DDCB8DDC-9030-4614-B8E3-88711CC5D287}.Debug|x64.Build.0 = Debug|x64
+		{DDCB8DDC-9030-4614-B8E3-88711CC5D287}.Release|x64.ActiveCfg = Release|x64
+		{DDCB8DDC-9030-4614-B8E3-88711CC5D287}.Release|x64.Build.0 = Release|x64
+		{D0BCEC89-9415-44E8-91D9-6981419B8DD1}.Debug|x64.ActiveCfg = Debug|x64
+		{D0BCEC89-9415-44E8-91D9-6981419B8DD1}.Debug|x64.Build.0 = Debug|x64
+		{D0BCEC89-9415-44E8-91D9-6981419B8DD1}.Release|x64.ActiveCfg = Release|x64
+		{D0BCEC89-9415-44E8-91D9-6981419B8DD1}.Release|x64.Build.0 = Release|x64
+		{5C68E93A-81B4-4434-8122-691417B3B9F8}.Debug|x64.ActiveCfg = Debug|x64
+		{5C68E93A-81B4-4434-8122-691417B3B9F8}.Debug|x64.Build.0 = Debug|x64
+		{5C68E93A-81B4-4434-8122-691417B3B9F8}.Release|x64.ActiveCfg = Release|x64
+		{5C68E93A-81B4-4434-8122-691417B3B9F8}.Release|x64.Build.0 = Release|x64
+		{A0D0864C-5EE9-4BF3-962A-C93213A8C462}.Debug|x64.ActiveCfg = Debug|x64
+		{A0D0864C-5EE9-4BF3-962A-C93213A8C462}.Debug|x64.Build.0 = Debug|x64
+		{A0D0864C-5EE9-4BF3-962A-C93213A8C462}.Release|x64.ActiveCfg = Release|x64
+		{A0D0864C-5EE9-4BF3-962A-C93213A8C462}.Release|x64.Build.0 = Release|x64
+		{91D1A5AA-3DF6-4EB1-823C-42A705AE387E}.Debug|x64.ActiveCfg = Debug|x64
+		{91D1A5AA-3DF6-4EB1-823C-42A705AE387E}.Debug|x64.Build.0 = Debug|x64
+		{91D1A5AA-3DF6-4EB1-823C-42A705AE387E}.Release|x64.ActiveCfg = Release|x64
+		{91D1A5AA-3DF6-4EB1-823C-42A705AE387E}.Release|x64.Build.0 = Release|x64
+		{FFCC55BF-C584-43A0-B17E-29A476A68452}.Debug|x64.ActiveCfg = Debug|x64
+		{FFCC55BF-C584-43A0-B17E-29A476A68452}.Debug|x64.Build.0 = Debug|x64
+		{FFCC55BF-C584-43A0-B17E-29A476A68452}.Release|x64.ActiveCfg = Release|x64
+		{FFCC55BF-C584-43A0-B17E-29A476A68452}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

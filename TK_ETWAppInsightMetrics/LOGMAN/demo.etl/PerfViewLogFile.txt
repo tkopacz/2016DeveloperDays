@@ -1,0 +1,52 @@
+Started with command line: "C:\AzureFY15TK\05PaaS_ServiceFabric02RTM\TK_ETWAppInsightMetrics\LOGMAN\PerfView.EXE" /OnlyProviders=*MyCompany-TK_ETWAppInsightMetrics-MiscTelemetry collect
+PerfView Version: 1.9.0.0  BuildDate: Fri 02/12/2016 11:19:34.83
+Started: Collect
+Circular buffer size = 0, setting to 500.
+[Kernel Log: C:\AzureFY15TK\05PaaS_ServiceFabric02RTM\TK_ETWAppInsightMetrics\LOGMAN\PerfViewData.kernel.etl]
+Kernel keywords enabled: None
+[User mode Log: C:\AzureFY15TK\05PaaS_ServiceFabric02RTM\TK_ETWAppInsightMetrics\LOGMAN\PerfViewData.etl]
+Enabling Provider:PerfViewLogger Level:Verbose Keywords:0xffffffffffffffff Stacks:0 Values: Guid:a8a71ac1-040f-54a2-07ca-00a89b5ab761
+Warning: PdbScope not found at C:\AzureFY15TK\05PaaS_ServiceFabric02RTM\TK_ETWAppInsightMetrics\LOGMAN\PerfViewExtensions\PdbScope.exe
+Disabling the Image Size Menu Item.
+Warning: ILSize not found at C:\AzureFY15TK\05PaaS_ServiceFabric02RTM\TK_ETWAppInsightMetrics\LOGMAN\PerfViewExtensions\ILSize.dll
+Disabling the IL Size Menu Item.
+Collection Dialog open.
+Enabling Providers specified by the user.
+Parsing ETW Provider Spec: *MyCompany-TK_ETWAppInsightMetrics-MiscTelemetry
+Parsing ETW Provider Spec: .NETTasks:0x80
+Enabling Provider:*MyCompany-TK_ETWAppInsightMetrics-MiscTelemetry Level:Verbose Keywords:0xffffffffffffffff Stacks:0 Values: Guid:291ecd9f-dc9a-53d6-8bcb-588780488549
+Enabling Provider:.NETTasks Level:Verbose Keywords:0x80 Stacks:0 Values: Guid:2e5dba47-a3d2-4d16-8ee0-6671ffdcd7b5
+[Starting collection at 10/12/2016 11:19:43 AM]
+[Manually Stopped (Gui)]
+Stopping tracing for sessions 'NT Kernel Logger' and 'PerfViewSession'.
+Kernel events were active for this trace.
+[Sending rundown command to CLR providers...]
+Enabling Provider:PerfViewLogger Level:Verbose Keywords:0xffffffffffffffff Stacks:0 Values: Guid:a8a71ac1-040f-54a2-07ca-00a89b5ab761
+Parsing ETW Provider Spec: *MyCompany-TK_ETWAppInsightMetrics-MiscTelemetry
+Parsing ETW Provider Spec: .NETTasks:0x80
+Enabling Provider:*MyCompany-TK_ETWAppInsightMetrics-MiscTelemetry Level:Critical Keywords:0x0 Stacks:0 Values: Guid:291ecd9f-dc9a-53d6-8bcb-588780488549
+Enabling Provider:.NETTasks Level:Critical Keywords:0x0 Stacks:0 Values: Guid:2e5dba47-a3d2-4d16-8ee0-6671ffdcd7b5
+Waiting up to 120 sec for rundown events.  Use /RundownTimeout to change.
+If you know your process has exited, use /noRundown qualifer to skip this step.
+Rundown File Length: 1.1MB delta: 1.1MB
+Rundown File Length: 1.1MB delta: 0.0MB
+Rundown file has stopped growing, assuming rundown complete.
+CLR Rundown took 2.063 sec.
+Heap events were active for this trace.
+Insuring .NET Allocation profiler not installed.
+[Merging data files to PerfViewData.etl.  Can take 10s of seconds... (can skip if data analyzed on same machine with PerfView)]
+Symbol reader _NT_SYMBOL_PATH= {
+    C:\AzureFY15TK\05PaaS_ServiceFabric02RTM\TK_ETWAppInsightMetrics\LOGMAN;
+    }
+This can be set using the File -> Set Symbol Path dialog on the Stack Viewer.
+Created SymbolReader with SymbolPath C:\AzureFY15TK\05PaaS_ServiceFabric02RTM\TK_ETWAppInsightMetrics\LOGMAN
+Starting Merging of C:\AzureFY15TK\05PaaS_ServiceFabric02RTM\TK_ETWAppInsightMetrics\LOGMAN\PerfViewData.etl
+Starting Generating NGEN pdbs for C:\AzureFY15TK\05PaaS_ServiceFabric02RTM\TK_ETWAppInsightMetrics\LOGMAN\PerfViewData.etl
+Generating NGEN Pdbs took 0.1 sec
+Merging took 0.5 sec
+Moving C:\AzureFY15TK\05PaaS_ServiceFabric02RTM\TK_ETWAppInsightMetrics\LOGMAN\PerfViewData.etl.new to C:\AzureFY15TK\05PaaS_ServiceFabric02RTM\TK_ETWAppInsightMetrics\LOGMAN\PerfViewData.etl
+Deleting temp file
+Merge took 0.486 sec.
+Merge output file C:\AzureFY15TK\05PaaS_ServiceFabric02RTM\TK_ETWAppInsightMetrics\LOGMAN\PerfViewData.etl
+[Zipping ETL file C:\AzureFY15TK\05PaaS_ServiceFabric02RTM\TK_ETWAppInsightMetrics\LOGMAN\PerfViewData.etl]
+[Writing 0 PDBS to Zip file]

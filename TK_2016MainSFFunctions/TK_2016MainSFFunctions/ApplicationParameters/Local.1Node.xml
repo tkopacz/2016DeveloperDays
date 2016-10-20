@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/TK_2016MainSFFunctions" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="TKWebApi_InstanceCount" Value="1" />
+    <Parameter Name="TKStateful_PartitionCount" Value="1" />
+    <Parameter Name="TKStateful_MinReplicaSetSize" Value="1" />
+    <Parameter Name="TKStateful_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="TKStateless_InstanceCount" Value="1" />
+    <Parameter Name="TKActorService_PartitionCount" Value="1" />
+    <Parameter Name="TKActorService_TargetReplicaSetSize" Value="1" />
+    <Parameter Name="TKActorService_MinReplicaSetSize" Value="1" />
+  </Parameters>
+</Application>

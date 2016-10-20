@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "TKActorSimpleTimer", "TKActorSimpleTimer\TKActorSimpleTimer.sfproj", "{60E9EA68-9EFB-495B-AB68-8124C91CE2F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timer1", "Timer1\Timer1.csproj", "{FFB92834-C49D-46FE-BD18-1D14CA9542C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timer1.Interfaces", "Timer1.Interfaces\Timer1.Interfaces.csproj", "{ED10592B-84A2-4E42-900A-9DB364819DB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatefulServiceTimer", "StatefulServiceTimer\StatefulServiceTimer.csproj", "{ED69322C-54F8-41D8-9932-1E5125A7C548}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60E9EA68-9EFB-495B-AB68-8124C91CE2F5}.Debug|x64.ActiveCfg = Debug|x64
+		{60E9EA68-9EFB-495B-AB68-8124C91CE2F5}.Debug|x64.Build.0 = Debug|x64
+		{60E9EA68-9EFB-495B-AB68-8124C91CE2F5}.Debug|x64.Deploy.0 = Debug|x64
+		{60E9EA68-9EFB-495B-AB68-8124C91CE2F5}.Release|x64.ActiveCfg = Release|x64
+		{60E9EA68-9EFB-495B-AB68-8124C91CE2F5}.Release|x64.Build.0 = Release|x64
+		{60E9EA68-9EFB-495B-AB68-8124C91CE2F5}.Release|x64.Deploy.0 = Release|x64
+		{FFB92834-C49D-46FE-BD18-1D14CA9542C8}.Debug|x64.ActiveCfg = Debug|x64
+		{FFB92834-C49D-46FE-BD18-1D14CA9542C8}.Debug|x64.Build.0 = Debug|x64
+		{FFB92834-C49D-46FE-BD18-1D14CA9542C8}.Release|x64.ActiveCfg = Release|x64
+		{FFB92834-C49D-46FE-BD18-1D14CA9542C8}.Release|x64.Build.0 = Release|x64
+		{ED10592B-84A2-4E42-900A-9DB364819DB4}.Debug|x64.ActiveCfg = Debug|x64
+		{ED10592B-84A2-4E42-900A-9DB364819DB4}.Debug|x64.Build.0 = Debug|x64
+		{ED10592B-84A2-4E42-900A-9DB364819DB4}.Release|x64.ActiveCfg = Release|x64
+		{ED10592B-84A2-4E42-900A-9DB364819DB4}.Release|x64.Build.0 = Release|x64
+		{ED69322C-54F8-41D8-9932-1E5125A7C548}.Debug|x64.ActiveCfg = Debug|x64
+		{ED69322C-54F8-41D8-9932-1E5125A7C548}.Debug|x64.Build.0 = Debug|x64
+		{ED69322C-54F8-41D8-9932-1E5125A7C548}.Release|x64.ActiveCfg = Release|x64
+		{ED69322C-54F8-41D8-9932-1E5125A7C548}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

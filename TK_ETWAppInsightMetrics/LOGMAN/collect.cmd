@@ -1,0 +1,1 @@
+PerfView /OnlyProviders=*MyCompany-TK_ETWAppInsightMetrics-MiscTelemetry collect

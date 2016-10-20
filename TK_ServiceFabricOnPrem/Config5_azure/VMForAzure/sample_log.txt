@@ -1,0 +1,93 @@
+21:21:33 - Build started.
+21:21:33 - Project "VMForAzure.deployproj" (StageArtifacts target(s)):
+21:21:33 - Project "VMForAzure.deployproj" (ContentFilesProjectOutputGroup target(s)):
+21:21:34 - Done building project "VMForAzure.deployproj".
+21:21:34 - Done building project "VMForAzure.deployproj".
+21:21:34 - Build succeeded.
+21:21:34 - The following parameter values will be used for this deployment:
+21:21:34 -     vmName: pltkw3srvfab04
+21:21:34 -     adminUsername: tkopacz
+21:21:34 -     adminPassword: <securestring>
+21:21:34 -     windowsOSVersion: 2012-R2-Datacenter
+21:21:34 - Launching deployment PowerShell script with the following command:
+21:21:34 - 'c:\azurefy15tk\05paas_servicefabric02rtm\tk_servicefabriconprem\config5_azure\vmforazure\vmforazure\Scripts\Deploy-AzureResourceGroup.ps1' -StorageAccountName '' -ResourceGroupName 'rgServiceFabricOnWin' -ResourceGroupLocation 'westeurope' -TemplateFile 'c:\azurefy15tk\05paas_servicefabric02rtm\tk_servicefabriconprem\config5_azure\vmforazure\vmforazure\templates\windowsvirtualmachine.json' -TemplateParametersFile 'c:\azurefy15tk\05paas_servicefabric02rtm\tk_servicefabriconprem\config5_azure\vmforazure\vmforazure\templates\windowsvirtualmachine.parameters.json' -ArtifactStagingDirectory '..\bin\Debug\staging'
+21:21:35 - 
+21:21:35 - 
+21:21:35 - Environment           : AzureCloud
+21:21:35 - Account               : tkopacz@microsoft.com
+21:21:35 - TenantId              : 72f988bf-86f1-41af-91ab-2d7cd011db47
+21:21:35 - SubscriptionId        : ae7513ac-36d5-4635-b466-e2230009cc8b
+21:21:35 - SubscriptionName      : TK pltkw3
+21:21:35 - CurrentStorageAccount : 
+21:21:35 - 
+21:21:35 - [WARNING] The usability of Tag parameter in this cmdlet will be modified in a future release. This will impact creating, updating and appending tags for Azure resources. For more details about the change, please visit https://github.com/Azure/azure-powershell/issues/726#issuecomment-213545494
+21:21:36 - [VERBOSE] 9:21:36 PM - Created resource group 'rgServiceFabricOnWin' in location 'westeurope'
+21:21:36 - 
+21:21:36 - ResourceGroupName : rgServiceFabricOnWin
+21:21:36 - Location          : westeurope
+21:21:36 - ProvisioningState : Succeeded
+21:21:36 - Tags              : {}
+21:21:36 - TagsTable         : 
+21:21:36 - ResourceId        : /subscriptions/ae7513ac-36d5-4635-b466-e2230009cc8b/resourc
+21:21:36 -                     eGroups/rgServiceFabricOnWin
+21:21:36 - 
+21:21:37 - [VERBOSE] 9:21:37 PM - Template is valid.
+21:21:37 - [VERBOSE] 9:21:37 PM - Create template deployment 'windowsvirtualmachine-0620-1921'
+21:21:37 - [VERBOSE] 9:21:37 PM - Checking deployment status in 5 seconds
+21:21:42 - [VERBOSE] 9:21:42 PM - Resource Microsoft.Compute/virtualMachines 'pltkw3srvfab04' provisioning status is running
+21:21:42 - [VERBOSE] 9:21:42 PM - Resource Microsoft.Network/networkInterfaces 'pltkw3srvfab04nic' provisioning status is succeeded
+21:21:42 - [VERBOSE] 9:21:42 PM - Resource Microsoft.Storage/storageAccounts 'vhdstorage25tk2b4fd2oiw' provisioning status is succeeded
+21:21:42 - [VERBOSE] 9:21:42 PM - Resource Microsoft.Network/publicIPAddresses 'pltkw3srvfab04IP' provisioning status is succeeded
+21:21:42 - [VERBOSE] 9:21:42 PM - Resource Microsoft.Storage/storageAccounts 'vhdstorage25tk2b4fd2oiw' provisioning status is succeeded
+21:21:42 - [VERBOSE] 9:21:42 PM - Checking deployment status in 10 seconds
+21:21:52 - [VERBOSE] 9:21:52 PM - Checking deployment status in 15 seconds
+21:22:07 - [VERBOSE] 9:22:07 PM - Checking deployment status in 20 seconds
+21:22:28 - [VERBOSE] 9:22:28 PM - Checking deployment status in 25 seconds
+21:22:53 - [VERBOSE] 9:22:53 PM - Checking deployment status in 30 seconds
+21:23:23 - [VERBOSE] 9:23:23 PM - Checking deployment status in 35 seconds
+21:23:58 - [VERBOSE] 9:23:58 PM - Checking deployment status in 40 seconds
+21:24:38 - [VERBOSE] 9:24:38 PM - Resource Microsoft.Compute/virtualMachines/extensions 'pltkw3srvfab04/Microsoft.Insights.VMDiagnosticsSettings' provisioning status is running
+21:24:38 - [VERBOSE] 9:24:38 PM - Resource Microsoft.Compute/virtualMachines 'pltkw3srvfab04' provisioning status is succeeded
+21:24:39 - [VERBOSE] 9:24:39 PM - Checking deployment status in 45 seconds
+21:25:24 - [VERBOSE] 9:25:24 PM - Checking deployment status in 50 seconds
+21:26:14 - [VERBOSE] 9:26:14 PM - Checking deployment status in 55 seconds
+21:27:09 - [VERBOSE] 9:27:09 PM - Resource Microsoft.Compute/virtualMachines/extensions 'pltkw3srvfab04/Microsoft.Insights.VMDiagnosticsSettings' provisioning status is succeeded
+21:27:09 - 
+21:27:09 - DeploymentName          : windowsvirtualmachine-0620-1921
+21:27:09 - CorrelationId           : 02eb529b-a8db-4e87-ad02-72e0d8090781
+21:27:09 - ResourceGroupName       : rgServiceFabricOnWin
+21:27:09 - ProvisioningState       : Succeeded
+21:27:09 - Timestamp               : 6/20/2016 7:26:45 PM
+21:27:09 - Mode                    : Incremental
+21:27:09 - TemplateLink            : 
+21:27:09 - TemplateLinkString      : 
+21:27:09 - DeploymentDebugLogLevel : 
+21:27:09 - Parameters              : {[vmName, Microsoft.Azure.Commands.ResourceManager.Cm
+21:27:09 -                           dlets.SdkModels.DeploymentVariable], [adminUsername, 
+21:27:09 -                           Microsoft.Azure.Commands.ResourceManager.Cmdlets.SdkM
+21:27:09 -                           odels.DeploymentVariable], [adminPassword, Microsoft.
+21:27:09 -                           Azure.Commands.ResourceManager.Cmdlets.SdkModels.Depl
+21:27:09 -                           oymentVariable], [windowsOSVersion, Microsoft.Azure.C
+21:27:09 -                           ommands.ResourceManager.Cmdlets.SdkModels.DeploymentV
+21:27:09 -                           ariable]}
+21:27:09 - ParametersString        : 
+21:27:09 -                           Name             Type                       Value    
+21:27:09 -                            
+21:27:09 -                           ===============  =========================  
+21:27:09 -                           ==========
+21:27:09 -                           vmName           String                     
+21:27:09 -                           pltkw3srvfab04
+21:27:09 -                           adminUsername    String                     tkopacz  
+21:27:09 -                            
+21:27:09 -                           adminPassword    SecureString                        
+21:27:09 -                            
+21:27:09 -                           windowsOSVersion  String                     
+21:27:09 -                           2012-R2-Datacenter
+21:27:09 -                           
+21:27:09 - Outputs                 : 
+21:27:09 - OutputsString           : 
+21:27:09 - 
+21:27:09 - 
+21:27:09 - 
+21:27:09 - 
+21:27:09 - Successfully deployed template 'c:\azurefy15tk\05paas_servicefabric02rtm\tk_servicefabriconprem\config5_azure\vmforazure\vmforazure\templates\windowsvirtualmachine.json' to resource group 'rgServiceFabricOnWin'.

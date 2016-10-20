@@ -1,0 +1,19 @@
+cd C:\Microsoft.Azure.ServiceFabric.WindowsServer.5.1.156.9590
+cd C:\Microsoft.Azure.ServiceFabric.WindowsServer.5.3.204.9494
+.\CreateServiceFabricCluster.ps1 -ClusterConfigFilePath .\ClusterConfig.json -MicrosoftServiceFabricCabFilePath .\MicrosoftAzureServiceFabric.cab -AcceptEULA -RollbackOnFailure $true
+
+.\RemoveServiceFabricCluster.ps1 -ClusterConfigFilePath .\ClusterConfig.json -MicrosoftServiceFabricCabFilePath .\MicrosoftAzureServiceFabric.cab
+
+
+Microsoft.Azure.ServiceFabric.WindowsServer.5.3.204.9494
+
+.\CreateServiceFabricCluster.ps1 -ClusterConfigFilePath .\ClusterConfig.json -AcceptEULA
+
+.\RemoveServiceFabricCluster.ps1 -ClusterConfigFilePath .\ClusterConfig.json
+
+
+Connect-ServiceFabricCluster
+
+Get-ServiceFabricClusterHealth
+
+http://pltkw3srvfab0.tkw3.local:19080/Explorer/index.html#

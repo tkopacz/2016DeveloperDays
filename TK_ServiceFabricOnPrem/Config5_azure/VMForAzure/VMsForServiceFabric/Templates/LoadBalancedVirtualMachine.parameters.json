@@ -1,0 +1,17 @@
+﻿{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "adminUsername": {
+            "value": "tkopacz"
+        },
+        "adminPassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/ae7513ac-36d5-4635-b466-e2230009cc8b/resourceGroups/vaults/providers/Microsoft.KeyVault/vaults/tkdef"
+                },
+                "secretName": "defPassword"
+            }
+        }
+    }
+}
