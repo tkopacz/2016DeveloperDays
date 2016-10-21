@@ -1,0 +1,131 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TKCart",
+		"_postman_id": "82306717-5856-2108-2ccb-08e7c7dc4b51",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8082/api/cart/SetCustomerInfo",
+			"request": {
+				"url": "http://localhost:8082/api/cart/SetCustomerInfo",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"actorId\": 1,\n\"name\": \"Tomasz\",\n\"surname\": \"Kopacz\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/api/cart/AddItem",
+			"request": {
+				"url": "http://localhost:8082/api/cart/AddItem",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"actorId\": 1,\n\"name\": \"item1\",\n\"count\": 201\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/api/cart/AddItems",
+			"request": {
+				"url": "http://localhost:8082/api/cart/AddItems",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"actorId\": 1,\n\"lines\":[\n\t{\n\t\t\"name\": \"item2\",\n\t\t\"count\": 202\n\t},\n\t{\n\t\t\"name\": \"item3\",\n\t\t\"count\": 203\n\t}\n\t]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/api/cart/GetShoppingCart?actorId=1",
+			"request": {
+				"url": "http://localhost:8082/api/cart/GetShoppingCart?actorId=1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"actorId\": 1,\n\"lines\":[\n\t{\n\t\t\"name\": \"item2\",\n\t\t\"count\": 202\n\t},\n\t{\n\t\t\"name\": \"item3\",\n\t\t\"count\": 203\n\t}\n\t]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/api/cart/ConfirmToSql?actorId=1",
+			"request": {
+				"url": "http://localhost:8082/api/cart/ConfirmToSql?actorId=1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"actorId\": 1,\n\"lines\":[\n\t{\n\t\t\"name\": \"item2\",\n\t\t\"count\": 202\n\t},\n\t{\n\t\t\"name\": \"item3\",\n\t\t\"count\": 203\n\t}\n\t]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8082/api/cart/ConfirmToQueue?actorId=1",
+			"request": {
+				"url": "http://localhost:8082/api/cart/ConfirmToQueue?actorId=1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"actorId\": 1,\n\"lines\":[\n\t{\n\t\t\"name\": \"item2\",\n\t\t\"count\": 202\n\t},\n\t{\n\t\t\"name\": \"item3\",\n\t\t\"count\": 203\n\t}\n\t]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

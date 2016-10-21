@@ -1,0 +1,291 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TK_2016MainSFFunctions",
+		"_postman_id": "f6f9c0b7-7be5-21f8-f87b-ab206ef9b522",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Actors",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/sf/ActorSet?actorId=2&value=2",
+					"request": {
+						"url": "http://localhost:8080/api/sf/ActorSet?actorId=2&value=2",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/sf/ActorGet?actorId=2",
+					"request": {
+						"url": "http://localhost:8080/api/sf/ActorGet?actorId=2",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/sf/ActorGetInfo?actorId=2",
+					"request": {
+						"url": "http://localhost:8080/api/sf/ActorGetInfo?actorId=2",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cloud",
+			"description": "",
+			"item": [
+				{
+					"name": "http://pltkw3sfcluster.westeurope.cloudapp.azure.com:8080/api/sf/ActorSet?actorId=2&value=2",
+					"request": {
+						"url": "http://pltkw3sfcluster.westeurope.cloudapp.azure.com:8080/api/sf/ActorSet?actorId=2&value=2",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://pltkw3sfcluster.westeurope.cloudapp.azure.com:8080/api/sf/ActorGet?actorId=2",
+					"request": {
+						"url": "http://pltkw3sfcluster.westeurope.cloudapp.azure.com:8080/api/sf/ActorGet?actorId=2",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://pltkw3sfcluster.westeurope.cloudapp.azure.com:8080/api/sf/ActorGetAll",
+					"request": {
+						"url": "http://pltkw3sfcluster.westeurope.cloudapp.azure.com:8080/api/sf/ActorGetAll",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DoBackup",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/sf/DoBackup?partition=1",
+					"request": {
+						"url": "http://localhost:8080/api/sf/DoBackup?partition=1",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Health",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/sf/TKCustomHealthWarning",
+					"request": {
+						"url": "http://localhost:8080/api/sf/TKCustomHealthWarning",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/sf/TKCustomHealthOK",
+					"request": {
+						"url": "http://localhost:8080/api/sf/TKCustomHealthOK",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Management",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/sf/ActorGetAll",
+					"request": {
+						"url": "http://localhost:8080/api/sf/ActorGetAll",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/sf/GetClusterInfo",
+					"request": {
+						"url": "http://localhost:8080/api/sf/GetClusterInfo",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Statefull",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/sf/TKStatefulSet?partition=1&name=abc&value=21",
+					"request": {
+						"url": "http://localhost:8080/api/sf/TKStatefulSet?partition=1&name=abc&value=21",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/sf/TKStatefulGet?partition=1&name=abc",
+					"request": {
+						"url": "http://localhost:8080/api/sf/TKStatefulGet?partition=1&name=abc",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/sf/TKStatefulGetInfo?partition=1",
+					"request": {
+						"url": "http://localhost:8080/api/sf/TKStatefulGetInfo?partition=1",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Stateless",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/sf/TKStatelessGetInfo?partition=1",
+					"request": {
+						"url": "http://localhost:8080/api/sf/TKStatelessGetInfo?partition=1",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/sf/TKStatelessSet?partition=1&name=abc&value=2",
+					"request": {
+						"url": "http://localhost:8080/api/sf/TKStatelessSet?partition=1&name=abc&value=2",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/sf/TKStatelessGetInfo?partition=1",
+					"request": {
+						"url": "http://localhost:8080/api/sf/TKStatelessGet?partition=1&name=abc",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
